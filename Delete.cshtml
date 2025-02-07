@@ -1,0 +1,113 @@
+﻿@model VeyselAlanWebPage.Models.PortfolioItem
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Sil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #dc3545;
+        }
+
+        .alert {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+            .form-group label {
+                font-weight: bold;
+            }
+
+            .form-group p {
+                padding: 10px;
+                background: #e9ecef;
+                border-radius: 5px;
+            }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+        .btn-secondary:hover {
+            background-color: #545b62;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Proje Silme Onayı</h2>
+
+        <div class="alert">
+            <strong>Uyarı:</strong> Bu proje kalıcı olarak silinecek. Silme işlemi geri alınamaz!
+        </div>
+
+      
+        <div class="form-group">
+            <label>Proje Adı:</label>
+            <p>@Model.ProjectName</p>
+        </div>
+
+        <div class="form-group">
+            <label>Açıklama:</label>
+            <p>@Model.Description</p>
+        </div>
+
+        <a href="@Url.Action("DeleteConfirmed", new {id=Model.Id})" class="btn-secondary">Projeyi Sil</a>
+
+
+
+        <a href="@Url.Action("Index", "Admin")" class="btn-secondary">İptal Et</a>
+    </div>
+
+</body>
+</html>
