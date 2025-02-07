@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Web Sitesi</title>
+
+    <!-- Ana sayfa css import -->
+    <link rel="stylesheet" href="/css/index.css">
+
+    <!-- Sosyal medya cdn import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- FontAwesome ve CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+
+    <!-- Portföy CSS -->
+    <link href="~/css/portfoy.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Menü -->
+    <ul class="menu">
+        <li><a asp-controller="Home" asp-action="Index">Ana Sayfa</a></li>
+        <li><a asp-controller="Home" asp-action="Portfoy">Portföyüm</a></li>
+    </ul>
+
+ @RenderBody()
+</body>
+</html>
