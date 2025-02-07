@@ -1,0 +1,57 @@
+﻿/* Genel Stil */
+body {
+    background-color: #f3f4f6; /* Açık gri arka plan */
+    color: #333; /* Varsayılan metin rengi koyu gri */
+    font-family: Arial, sans-serif;
+}
+
+/* Form Konteyneri */
+form {
+    background-color: white; /* Beyaz form arka planı */
+    color: #333; /* Yazılar koyu gri */
+    padding: 20px;
+    border-radius: 8px; /* Köşeleri yuvarlat */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+/* Form Elemanları */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Gri çerçeve */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333; /* Metin rengi */
+    background-color: #f9f9f9; /* Input arka planı */
+}
+
+    input[type="text"]:focus, input[type="password"]:focus {
+        border-color: #007bff; /* Mavi çerçeve */
+        outline: none;
+    }
+
+/* Buton */
+button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; /* Mavi arka plan */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    button:hover {
+        background-color: #0056b3; /* Daha koyu mavi */
+    }
+
+/* Hata Mesajı */
+.error-message {
+    color: #ff4d4d; /* Kırmızı hata mesajı */
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+﻿/* Genel Sayfa Stili */
+body {
+    background-color: #f3f4f6; /* Tailwind bg-gray-100 */
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Kart (Silme Onayı Kutusu) */
+.container {
+    max-width: 400px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+}
+
+/* Başlık Stili */
+h1 {
+    font-size: 1.875rem; /* Tailwind text-3xl */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Proje Bilgileri */
+.project-info h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    color: #4b5563; /* Tailwind text-gray-600 */
+    font-size: 1rem;
+}
+
+/* Buton Stilleri */
+button, .cancel-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.delete-btn {
+    background-color: #ef4444; /* Tailwind bg-red-500 */
+    color: white;
+}
+
+    .delete-btn:hover {
+        background-color: #dc2626; /* Tailwind hover:bg-red-600 */
+    }
+
+.cancel-btn {
+    background-color: #6b7280; /* Tailwind bg-gray-500 */
+    color: white;
+    text-decoration: none;
+}
+
+    .cancel-btn:hover {
+        background-color: #4b5563; /* Tailwind hover:bg-gray-600 */
+    }

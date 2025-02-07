@@ -1,0 +1,125 @@
+/* Genel Sayfa Tasarımı */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Sayfanın Gövde Tasarımı */
+body {
+    color: white;
+    font-family: sans-serif;
+    background-image: url('../img/khanjan-chhaya-ec6scs_aw2c-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Menü (Yönlendirme Bağlantıları) */
+    .menu
+
+{
+    list-style-type: none;
+    margin: 30px;
+    padding: 10px 0;
+    position: absolute; /* Üstte sabitlemek için */
+    top: 0; /* Sayfanın en üst kısmına yerleştirir */
+    left: 0;
+    width: 100%;
+    /* Sbackground-color: rgba(0, 0, 0, 0.6); Arka planı yarı saydam yapar */
+    text-align: center;
+    z-index: 100; /* Diğer içeriklerin üzerinde görünmesi için */
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+    .menu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .menu li a:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Hover efekti için */
+        }
+}
+
+/* Avatar CSS Tasarımı */
+.center .avatar img{
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-top: 5%;
+}
+
+/* En Genel Div */
+.center{
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 550px;
+    text-align: center;
+    border-radius: 5%;
+}
+
+/*  Hakkımda kısmının CSS Tasarımı */
+.content{
+    padding: 30px;
+
+}
+
+h1{
+    color: wheat;
+}
+
+.content h2, p{
+    font-weight: lighter;
+    letter-spacing: 1px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+/* Sosyal Medya Butonları */
+div.social i{
+    padding: 0px 10px;
+    padding-top:5px;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.4s;
+}
+
+div.social i:hover{
+    color:rgba(255, 255, 255, 1)
+}
+
+/* Sitenin responsive tasarımı */
+@media screen and (max-width:700px){
+    .center{
+        width:300px;
+        height:500px;
+
+    }
+    h1{
+        font-size:22px;
+    }
+
+    h2{
+        font-size:16px;
+    }
+    p{
+        width:90%;
+        font-size:12px;
+    }
+    h3{
+        font-size:14px;
+    }
+    .social a i{
+        font-size:35px;
+    }
+}
